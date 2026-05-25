@@ -1,0 +1,12 @@
+.link {
+    font-size: 9rem;
+    transition: 2s;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+.link:active {
+    background-color: #40B88E;
+    font-size: 16rem;
+}
+
