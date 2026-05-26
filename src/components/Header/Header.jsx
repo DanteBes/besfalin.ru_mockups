@@ -3,25 +3,25 @@ function Header() {
         <header>
             <div>
                 <img rcs=""/>
-                <div>
+                <div className={styles.headerloo}>
                     <h1>Yaroslav Besfaln</h1>
                     <span>veb-developer</span>
                 </div>
 
-                <div>
-                    <ol>
-                        <li>
-                            <a>
+                <div className={styles.boxlink}>
+                    <ol className={styles.listlink}>
+                        <li className={styles.objlink}>
+                            <a className={styles.link} href="#">
                                 about
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a className={styles.link} href="#">
                                 contacts
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a className={styles.link} href="#">
                                 projects
                             </a>
                         </li>
