@@ -1,8 +1,10 @@
+import styles from "./Header.module.css"
+
 function Header() {
     return (
         <header>
             <div>
-                <img rcs=""/>
+                <img src="" alt="А где картинка?"/>
                 <div className={styles.headerloo}>
                     <h1>Yaroslav Besfaln</h1>
                     <span>veb-developer</span>
