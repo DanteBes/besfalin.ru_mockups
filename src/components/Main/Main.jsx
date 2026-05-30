@@ -1,4 +1,5 @@
 import styles from "./Main.module.css"
+import ava from "../../assets/ava.png"
 
 function Main() {
     return (
@@ -12,7 +13,7 @@ function Main() {
              </div>
 
              <div className={styles.objF}>
-                <img src="" alt="А где картинка?"/>
+                <img src={ava} alt="А где картинка?"/>
              </div>
         </main>
     )
