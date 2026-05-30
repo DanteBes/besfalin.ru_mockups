@@ -1,10 +1,11 @@
 import styles from "./Header.module.css"
+import ava from "../../assets/ava.png"
 
 function Header() {
     return (
         <header>
             <div>
-                <img src="" alt="А где картинка?"/>
+                <img src={ava} alt="А где картинка?"/>
                 <div className={styles.headerloo}>
                     <h1>Yaroslav Besfaln</h1>
                     <span>veb-developer</span>

@@ -2,7 +2,7 @@ import styles from "./Main.module.css"
 
 function Main() {
     return (
-        <main>
+        <main className={styles.main}>
              <div>
                 <h2>Всем привет это сайт,</h2>
                 <h1>Ярослава Бесфалина</h1>
@@ -11,7 +11,7 @@ function Main() {
                 </p>
              </div>
 
-             <div>
+             <div className={styles.objF}>
                 <img src="" alt="А где картинка?"/>
              </div>
         </main>
