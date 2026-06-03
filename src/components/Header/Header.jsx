@@ -5,10 +5,10 @@ function Header() {
     return (
         <header>
             <div>
-                <img src={ava} alt="А где картинка?"/>
-                <div className={styles.headerloo}>
-                    <h1>Yaroslav Besfaln</h1>
-                    <span>veb-developer</span>
+                <img className={styles.headerLogo} src={ava} alt="А где картинка?"/>
+                <div className={styles.headerName}>
+                    <h1 className={styles.headerTitle}>Yaroslav Besfaln</h1>
+                    <span className={styles.headerSubTitle}>veb-developer</span>
                 </div>
 
                 <div className={styles.boxlink}>
@@ -18,14 +18,25 @@ function Header() {
                                 about
                             </a>
                         </li>
-                        <li>
+                        <li className={styles.objlink}>
                             <a className={styles.link} href="#">
                                 contacts
                             </a>
                         </li>
-                        <li>
+                        <li className={styles.objlink}>
                             <a className={styles.link} href="#">
                                 projects
+                            </a>
+                        </li>
+                    </ol>
+
+                    <ol className={styles.listSettings}>
+                        <li className={styles.linkSettings}>
+                            <a className={styles.LinkLanguage}>
+                                А/Я
+                            </a>
+                            <a className={styles.linkTheme}>
+                                🌙
                             </a>
                         </li>
                     </ol>
