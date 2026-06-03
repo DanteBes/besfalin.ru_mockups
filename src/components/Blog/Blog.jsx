@@ -1,30 +1,31 @@
 
 function Blog() {
     return (
-        <section>
-            <div>
-                <div>
-                    <h1>
+        <section className={styles.}>
+            <div className={styles.}>
+                <div className={styles.}>
+                    <h1 className={styles.}>
                         Мой блог
                     </h1>
                 </div>
 
-                <div>
-                    <h2>
+                <div className={styles.}>
+                    <h2 className={styles.}>
                         01 Как я начал кодить
                     </h2>
-                    <h2>
+                    <h2 className={styles.}>
                         02 Сломался планшет
                     </h2>
-                    <h2>
+                    <h2 className={styles.}>
                         03 Мне выпал ЛЕОН!!!
                     </h2>
                 </div>
-                <div>
-                    <p>
+
+                <div className={styles.}>
+                    <p className={styles.}>
                         Здесь я пишу о том что меня беспокоит или мне нравится и так далее бла бла
                     </p>
-                    <a href="#">
+                    <a className={styles.} href="#">
                         Читать далее 👉
                     </a>
                 </div>
