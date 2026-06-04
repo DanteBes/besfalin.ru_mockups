@@ -3,27 +3,27 @@ import ava from "../../assets/ava.png"
 
 function Main() {
     return (
-        <main className={styles.main}>
-             <div>
-                <h2>Всем привет это сайт,</h2>
-                <h1>Ярослава Бесфалина</h1>
-                <p>
+        <main className={styles.previewMain}>
+             <div className={styles.previewLogo}>
+                <h2 className={styles.previewSubtitle}>Всем привет это сайт,</h2>
+                <h1 className={styles.previewTitle}>Ярослава Бесфалина</h1>
+                <p className={styles.previewParagraph}>
                     Разработчик, энтузиаст, исследователь технологий.Делаю веб-проекты и делюсь опытом в блоге.
                 </p>
 
-                <ol>
-                    <li>
-                        <a>
+                <ol className={}>
+                    <li className={}>
+                        <a className={}>
                             🏙️ VK
                         </a>
                     </li>
-                    <li>
-                        <a>
+                    <li className={}>
+                        <a className={}>
                             🏙️ TG
                         </a>
                     </li>
-                    <li>
-                        <a>
+                    <li className={}>
+                        <a className={}>
                             🏙️ YT
                         </a>
                     </li>
