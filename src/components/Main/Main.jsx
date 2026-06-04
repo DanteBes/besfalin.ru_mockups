@@ -11,8 +11,8 @@ function Main() {
                     Разработчик, энтузиаст, исследователь технологий.Делаю веб-проекты и делюсь опытом в блоге.
                 </p>
 
-                <ol className={}>
-                    <li className={}>
+                <ol className={styles.previewMainList}>
+                    <li className={styles.previewListObject}>
                         <a className={}>
                             🏙️ VK
                         </a>
