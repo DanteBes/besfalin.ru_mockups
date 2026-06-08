@@ -13,17 +13,17 @@ function Main() {
 
                 <ol className={styles.previewMainList}>
                     <li className={styles.previewListObject}>
-                        <a className={}>
+                        <a className={styles.previewLink}>
                             🏙️ VK
                         </a>
                     </li>
-                    <li className={}>
-                        <a className={}>
+                    <li className={styles.previewListObject}>
+                        <a className={styles.previewLink}>
                             🏙️ TG
                         </a>
                     </li>
-                    <li className={}>
-                        <a className={}>
+                    <li className={styles.previewListObject}>
+                        <a className={styles.previewLink}>
                             🏙️ YT
                         </a>
                     </li>
