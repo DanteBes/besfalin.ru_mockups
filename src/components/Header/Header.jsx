@@ -3,14 +3,15 @@ import ava from "../../assets/ava.png"
 
 function Header() {
     return (
-        <header>
-            <div>
-                <img className={styles.headerLogo} src={ava} alt="А где картинка?"/>
-                <div className={styles.headerName}>
-                    <h1 className={styles.headerTitle}>Yaroslav Besfaln</h1>
-                    <span className={styles.headerSubTitle}>veb-developer</span>
-                </div>
-
+        <header className={styles.header}>
+            <div className={styles.headerContent}>
+	    	<div className={styles.nameBlock}> 
+                    <img className={styles.headerLogo} src={ava} alt="А где картинка?"/>
+                    <div className={styles.headerName}>
+                        <h1 className={styles.headerTitle}>Yaroslav Besfaln</h1>
+                        <span className={styles.headerSubTitle}>veb-developer</span>
+                    </div>
+		</div>
                 <div className={styles.boxlink}>
                     <ol className={styles.listlink}>
                         <li className={styles.objlink}>
@@ -29,17 +30,18 @@ function Header() {
                             </a>
                         </li>
                     </ol>
-
-                    <ol className={styles.listSettings}>
+		</div>
+	    	<div className={styles.blockBtns}>
+                    <ul className={styles.listSettings}>
                         <li className={styles.linkSettings}>
-                            <a className={styles.LinkLanguage}>
+                            <a className={styles.linkSetting}>
                                 А/Я
                             </a>
-                            <a className={styles.linkTheme}>
+                            <a className={styles.linkSetting}>
                                 🌙
                             </a>
                         </li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
         </header>

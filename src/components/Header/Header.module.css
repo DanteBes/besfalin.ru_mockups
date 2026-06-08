@@ -1,4 +1,29 @@
-.headerLogo {}
+.header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.7em;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nameBlock {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.headerLogo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 
 .headerName {}
 
@@ -8,16 +33,26 @@
 
 .boxlink {}
 
-.listlink {}
+.listlink {
+    display: flex;
+}
 
 .objlink {}
 
-.link {}
+.link {
+    padding: 0.3em 1em;
+}
 
 .listSettings {}
 
-.linkSettings {}
+.linkSetting {
+    padding: 0.3em 1em;
+}
 
 .LinkLanguage {}
 
 .linkTheme {}
+
+.blockBtns {
+    display: flex;
+}
