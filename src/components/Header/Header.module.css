@@ -45,10 +45,18 @@
     display: flex;
 }
 
-.objlink {}
-
 .link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5em;
+    transition: 0.5s;
     padding: 0.3em 1em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.link:hover {
+    color: #F0C05A;
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .listSettings {}
