@@ -3,6 +3,8 @@
     justify-content: center;
     width: 100%;
     padding: 0.7em;
+    background-color: #0D121E;
+    color: #FFF;
 }
 
 .headerContent {
@@ -27,9 +29,15 @@
 
 .headerName {}
 
-.headerTitle {}
+.headerTitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
 
-.headerSubTitle {}
+.headerSubTitle {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
 
 .boxlink {}
 
