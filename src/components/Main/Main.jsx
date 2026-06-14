@@ -1,5 +1,10 @@
 import styles from "./Main.module.css"
 import ava from "../../assets/ava.png"
+import { 
+	FaTelegramPlane, 
+	FaVk, 
+	FaYoutube 
+} from "react-icons/fa"
 
 function Main() {
     return (
@@ -15,17 +20,17 @@ function Main() {
 			<ol className={styles.previewMainList}>
 			    <li className={styles.previewListObject}>
 				<a className={styles.previewLink}>
-				    🏙️ VK
+				    <FaVk size={50}/>
 				</a>
 			    </li>
 			    <li className={styles.previewListObject}>
 				<a className={styles.previewLink}>
-				    🏙️ TG
+				    <FaTelegramPlane size={50}/>
 				</a>
 			    </li>
 			    <li className={styles.previewListObject}>
 				<a className={styles.previewLink}>
-				    🏙️ YT
+				    <FaYoutube size={50} />
 				</a>
 			    </li>
 			</ol>
