@@ -12,6 +12,8 @@ body {
   font-size: 1rem;
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.5;
+  color: var(--txt-clr);
+  background-color: var(--bg-clr);
 }
 
 img,
