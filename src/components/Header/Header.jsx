@@ -1,5 +1,10 @@
 import styles from "./Header.module.css"
 import ava from "../../assets/ava.png"
+import { 
+    IoLanguage, 
+    {/*CgFormatJustify,*/}
+    CgDarkMode
+ } from "react-icons/io5"
 
 function Header() {
     return (
@@ -35,12 +40,17 @@ function Header() {
                     <ul className={styles.listSettings}>
                         <li className={styles.linkSettings}>
                             <a className={styles.linkSetting}>
-                                А/Я
+                              <IoLanguage />
                             </a>
                             <a className={styles.linkSetting}>
-                                🌙
+                                <CgDarkMode />
                             </a>
-                        </li>
+                            {
+                            /*<a className={}>
+                                <CgFormatJustify />
+                            </a>*/
+                          }
+                       </li>
                     </ul>
                 </div>
             </div>
