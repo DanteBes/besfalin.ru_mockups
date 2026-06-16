@@ -2,9 +2,12 @@ import styles from "./Header.module.css"
 import ava from "../../assets/ava.png"
 import { 
     IoLanguage, 
-    {/*CgFormatJustify,*/}
-    CgDarkMode
  } from "react-icons/io5"
+ import { 
+    //CgDarkMode, 
+    //CgFormatJustify 
+} from "react-icons/cg"
+import { FaMoon } from "react-icons/fa"
 
 function Header() {
     return (
@@ -43,7 +46,8 @@ function Header() {
                               <IoLanguage />
                             </a>
                             <a className={styles.linkSetting}>
-                                <CgDarkMode />
+                                {/*<CgDarkMode />*/}
+                                <FaMoon />
                             </a>
                             {
                             /*<a className={}>
