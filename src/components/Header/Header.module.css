@@ -56,7 +56,7 @@
 
 .link:hover {
     color: #F0C05A;
-    box-shadow: 0px 4px 10px 0px #F0C05A;
+    filter: drop-shadow(0px 2px 5px var(--accent-clr));
 }
 
 .listSettings {
@@ -66,12 +66,21 @@
     width: 100%;
 }
 
-.linkSetting {
+.linkSettings {
+    display: flex;
     padding: 0.3em 1em;
 }
 
 .linkSetting {
-    font-size: 1rem;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.linkSetting:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 2px 5px var(--accent-clr));
+    color: var(--accent-clr);
 }
 
 .blockBtns {
