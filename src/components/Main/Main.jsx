@@ -14,7 +14,7 @@ function Main() {
 			<h2 className={styles.previewSubtitle}>Всем привет с вами</h2>
 			<h1 className={styles.previewTitle}>Ярослав Бесфалин</h1>
 			<p className={styles.previewParagraph}>
-			    Разработчик, энтузиаст, исследователь технологий. Делаю веб-проекты и делюсь опытом в блоге.
+				Я разработчик, который работает не в стандартных условиях, энтузиаст, исследователь технологий. Делаю веб-проекты и делюсь опытом в блоге.
 			</p>
 
 			<ol className={styles.previewMainList}>
