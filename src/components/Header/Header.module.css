@@ -1,88 +1,99 @@
 .header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 0.7em;
-    background-color: #0D121E;
-    color: #FFF;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.7em;
+  background-color: #0d121e;
+  color: #fff;
 }
 
 .headerContent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .nameBlock {
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 
 .headerLogo {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
 
-.headerName {}
+.headerName {
+}
 
 .headerTitle {
-    font-size: 1.2rem;
-    font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .headerSubTitle {
-    font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .boxlink {
 }
 
 .listlink {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 0.5em;
-    transition: 0.5s;
-    padding: 0.3em 1em;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.5em;
+  padding: 0.3em 1em;
+  transition:
+    color 0.3s,
+    filter 0.3s;
 }
 
 .link:hover {
-    color: #F0C05A;
-    filter: drop-shadow(0px 2px 5px var(--accent-clr));
+  color: #f0c05a;
+  filter: drop-shadow(0 2px 5px var(--accent-clr));
+  transition:
+    color 0s,
+    filter 0s;
 }
 
 .listSettings {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
 }
 
 .linkSettings {
-    display: flex;
-    padding: 0.3em 1em;
+  display: flex;
+  padding: 0.3em 1em;
 }
 
 .linkSetting {
-    padding: 0.5em;
-    font-size: 1.2rem;
-    transition: 0.3s;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  transition:
+    color 0.3s,
+    filter 0.3s;
 }
 
 .linkSetting:hover {
-    cursor: pointer;
-    filter: drop-shadow(0px 2px 5px var(--accent-clr));
-    color: var(--accent-clr);
+  cursor: pointer;
+  filter: drop-shadow(0 2px 5px var(--accent-clr));
+  color: var(--accent-clr);
+  transition:
+    color 0s,
+    filter 0s;
 }
 
 .blockBtns {
-    display: flex;
+  display: flex;
 }
