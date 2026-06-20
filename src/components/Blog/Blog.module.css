@@ -10,6 +10,7 @@
   max-width: 1200px;
   padding: 3.7em;
   border-radius: 0.5em;
+  background-color: #0d121e;
 }
 
 .blogHeader {
@@ -25,19 +26,30 @@
 }
 
 .blogLink {
-}
-
-.blogTitle {
+  padding: 0.2em;
 }
 
 .blogTime {
+  opacity: 0.8;
 }
 
 .blogFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .blogDescription {
 }
 
-.blogLink {
+.blogLinkNext {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+  border-radius: 0.7em;
+  font-size: 1.2rem;
+  width: fit-content;
+  color: var(--bg-clr);
+  background-color: var(--accent-clr);
 }

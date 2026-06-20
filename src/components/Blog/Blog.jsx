@@ -1,4 +1,5 @@
 import styles from './Blog.module.css'
+import { CgArrowLongRight } from 'react-icons/cg'
 
 function Blog() {
   return (
@@ -39,10 +40,13 @@ function Blog() {
 
         <div className={styles.blogFooter}>
           <p className={styles.blogDescription}>
-            Здесь я пишу о том что меня беспокоит или мне нравится и так далее бла бла
+            Всем привет! Меня зовут Ярослав Бесфалин, в интернете я известен под псевдонимом Dante
+            Besfalin. Мне 23 года (на 2024 год). Родился я в городе Выборг в 2001 году. При рождении
+            произошла осложненная ситуация: я задушился пуповиной, и мне поставили диагноз ДЦП
+            (детский церебральный паралич).
           </p>
-          <a className={styles.blogLink} href="#">
-            Читать далее 👉
+          <a className={styles.blogLinkNext} href="#">
+            Читать далее <CgArrowLongRight />
           </a>
         </div>
       </div>
