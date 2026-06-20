@@ -5,7 +5,7 @@ function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footerContent}>
                 <span className={styles.footerText}>
-                    @2026 by: besfalin
+                    © 2026 Dante Besfalin
                 </span>
             </div>
         </footer>

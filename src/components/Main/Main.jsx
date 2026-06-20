@@ -1,20 +1,20 @@
 import styles from "./Main.module.css"
 import ava from "../../assets/ava.png"
-import { 
-	FaTelegramPlane, 
-	FaVk, 
-	FaYoutube 
+import {
+	FaTelegramPlane,
+	FaVk,
+	FaYoutube
 } from "react-icons/fa"
 
 function Main() {
     return (
         <main className={styles.previewMain}>
             <div className={styles.previewMainContent}>
-		    <div className={styles.previewLogo}>
-			<h2 className={styles.previewSubtitle}>Всем привет с вами</h2>
+            <div className={styles.previewLogo}>
+			<h2 className={styles.previewSubtitle}>Всем привет,<br/> с вами</h2>
 			<h1 className={styles.previewTitle}>Ярослав Бесфалин</h1>
 			<p className={styles.previewParagraph}>
-				Я разработчик, который работает не в стандартных условиях, энтузиаст, исследователь технологий. Делаю веб-проекты и делюсь опытом в блоге.
+				Я разработчик, который работает в не стандартных условиях, энтузиаст, исследователь технологий. Делаю веб-проекты и делюсь опытом в блоге.
 			</p>
 
 			<ol className={styles.previewMainList}>

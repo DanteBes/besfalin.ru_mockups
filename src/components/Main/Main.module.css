@@ -32,12 +32,11 @@
 .previewSubtitle {
     font-size: 2rem;
     font-weight: 600;
-    width: 195px;
+    line-height: 1.5;
 }
 
 .previewParagraph {
     font-size: 1.3rem;
-    font-weight: 500;
 }
 
 .previewMainList {
@@ -54,14 +53,16 @@
 .previewLink {
     color: var(--txt-clr);
     padding: 1em;
-    transition: 0.5s;
+
+    transition: color 0.5s, filter 0.5s;
 }
 
 .previewLink:hover {
     cursor: pointer;
-    margin-top: 10px;
     color: var(--accent-clr);
     filter: drop-shadow(0px 2px 5px var(--accent-clr));
+
+    transition: color 0s, filter 0s;
 }
 
 .objF {
