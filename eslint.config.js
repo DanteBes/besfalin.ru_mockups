@@ -24,7 +24,7 @@ export default defineConfig([
       'no-undef': 'error',
       'no-var': 'error',
       'prefer-const': 'error',
-      'eqeqeq': ['error', 'always'],
+      eqeqeq: ['error', 'always'],
       'no-duplicate-imports': 'error',
       'no-self-compare': 'error',
     },

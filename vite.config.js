@@ -2,18 +2,20 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import checker from 'vite-plugin-checker'
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [
     react(),
-    checker({
-      typescript: true,
-      eslint: {
-        lintCommand: 'eslint .',
-        useFlatConfig: true,
-      },
-    }),
+    // checker нужен только в режиме разработки, чтобы не зависал production build
+    command === 'serve' &&
+      checker({
+        typescript: true,
+        eslint: {
+          lintCommand: 'eslint .',
+          useFlatConfig: true,
+        },
+      }),
   ],
   server: {
-    allowedHosts: ["dev5173.besfalin.ru"]
-  }
-})
+    allowedHosts: ['dev5173.besfalin.ru'],
+  },
+}))

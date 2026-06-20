@@ -1,22 +1,30 @@
-.blogSection {}
-
-.blogContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 100%;
+.blogSection {
 }
 
-.blogHeader {}
+.blogContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
 
-.blogTitle {}
+.blogHeader {
+}
 
-.blogList {}
+.blogTitle {
+}
 
-.blogItem {}
+.blogList {
+}
 
-.blogFooter {}
+.blogItem {
+}
 
-.blogDescription {}
+.blogFooter {
+}
 
-.blogLink {}
+.blogDescription {
+}
+
+.blogLink {
+}
