@@ -9,11 +9,32 @@ function Blog() {
             <h1 className={styles.blogTitle}>Мой блог</h1>
           </div>
 
-          <div className={styles.blogList}>
-            <h2 className={styles.blogItem}>01 Как я начал кодить</h2>
-            <h2 className={styles.blogItem}>02 Сломался планшет</h2>
-            <h2 className={styles.blogItem}>03 Мне выпал ЛЕОН!!!</h2>
-          </div>
+          <ul className={styles.blogList}>
+            <li className={styles.blogItem}>
+              <a className={styles.blogLink}>
+                <h2 className={styles.blogTitle}>01 Как я начал кодить</h2>
+                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
+                  6 июня
+                </time>
+              </a>
+            </li>
+            <li className={styles.blogItem}>
+              <a className={styles.blogLink}>
+                <h2 className={styles.blogTitle}>02 Сломался планшет</h2>
+                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
+                  6 июня
+                </time>
+              </a>
+            </li>
+            <li className={styles.blogItem}>
+              <a className={styles.blogLink}>
+                <h2 className={styles.blogTitle}>03 Мне выпал ЛЕОН!!!</h2>
+                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
+                  6 июня
+                </time>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <div className={styles.blogFooter}>
