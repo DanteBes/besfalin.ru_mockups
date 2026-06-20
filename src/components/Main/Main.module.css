@@ -37,6 +37,8 @@
 
 .previewParagraph {
   font-size: 1.3rem;
+  min-width: 300px;
+  width: 75%;
 }
 
 .previewMainList {
