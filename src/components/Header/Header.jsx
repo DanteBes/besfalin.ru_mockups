@@ -11,7 +11,7 @@ function Header() {
           <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
           <div className={styles.headerName}>
             <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
-            <span className={styles.headerSubTitle}>veb-developer</span>
+            <span className={styles.headerSubTitle}>web-developer</span>
           </div>
         </div>
         <div className={styles.boxlink}>
