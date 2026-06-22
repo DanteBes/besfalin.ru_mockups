@@ -10,7 +10,7 @@ function Header() {
         <div className={styles.nameBlock}>
           <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
           <div className={styles.headerName}>
-            <h1 className={styles.headerTitle}>Yaroslav Besfaln</h1>
+            <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
             <span className={styles.headerSubTitle}>veb-developer</span>
           </div>
         </div>
@@ -18,17 +18,17 @@ function Header() {
           <ol className={styles.listlink}>
             <li className={styles.objlink}>
               <a className={styles.link} href="#">
-                about
+                Обо мне
               </a>
             </li>
             <li className={styles.objlink}>
               <a className={styles.link} href="#">
-                contacts
+                Контакты
               </a>
             </li>
             <li className={styles.objlink}>
               <a className={styles.link} href="#">
-                projects
+                Проекты
               </a>
             </li>
           </ol>
