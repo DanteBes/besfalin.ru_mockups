@@ -7,27 +7,27 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <div className={styles.nameBlock}>
+        <a href="/" className={styles.nameBlock}>
           <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
           <div className={styles.headerName}>
             <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
             <span className={styles.headerSubTitle}>web-developer</span>
           </div>
-        </div>
+        </a>
         <div className={styles.boxlink}>
           <ol className={styles.listlink}>
             <li className={styles.objlink}>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="/about">
                 Обо мне
               </a>
             </li>
             <li className={styles.objlink}>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="/contacts">
                 Контакты
               </a>
             </li>
             <li className={styles.objlink}>
-              <a className={styles.link} href="#">
+              <a className={styles.link} href="/projects">
                 Проекты
               </a>
             </li>
