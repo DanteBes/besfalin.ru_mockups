@@ -1,6 +1,14 @@
 .footer {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 0.7em;
+  color: var(--txt-clr);
+  background-color: #0d121e;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1200px;
 }
