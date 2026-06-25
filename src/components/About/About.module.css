@@ -1,2 +1,16 @@
 .about {
+  width: 100%;
+  display: flex;
+  border-radius: 0.5em;
+  justify-content: center;
+  background-color: #0d121e;
+}
+
+.aboutContent {
+  width: 100%;
+  display: flex;
+  padding: 0.7em;
+  max-width: 1200%;
+  align-items: center;
+  border-radius: 0.7em;
 }
