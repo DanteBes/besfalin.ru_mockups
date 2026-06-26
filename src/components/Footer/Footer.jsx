@@ -6,14 +6,14 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <span className={styles.footerText}>© 2026 Dante Besfalin</span>
-        <ul className={styles.FooterList}>
-          <li className={styles.FooterObject}>
-            <a className={styles.FooterLink}>
+        <ul className={styles.footerList}>
+          <li className={styles.footerObject}>
+            <a className={styles.footerLink}>
               <FaGithub />
             </a>
           </li>
-          <li className={styles.FooterObject}>
-            <a className={styles.FooterLinkFrend}>
+          <li className={styles.footerObject}>
+            <a className={styles.footerLinkFrend}>
               <FaGithub />
             </a>
           </li>

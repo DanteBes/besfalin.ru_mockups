@@ -9,6 +9,28 @@
 }
 
 .footerContent {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 1200px;
+}
+
+.footerList {
+  display: flex;
+  gap: 0.7em;
+}
+
+.footerObject {
+  padding: 0.5em;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.footerObject:hover {
+  color: var(--accent-clr);
+  filter: drop-shadow(0 2px 5px var(--accent-clr));
+}
+
+.footerLinkFrend:hover {
+  opacity: 0.5;
 }
