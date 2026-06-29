@@ -2,15 +2,23 @@
   width: 100%;
   display: flex;
   border-radius: 0.5em;
-  justify-content: center;
   background-color: #0d121e;
 }
 
 .aboutContent {
-  width: 100%;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
   padding: 0.7em;
   max-width: 1200%;
-  align-items: center;
   border-radius: 0.7em;
+}
+
+.aboutAva {
+  margin: auto;
+  width: 30%;
+  border-radius: 50%;
+  filter: drop-shadow(0 2px 5px var(--accent-clr));
 }
