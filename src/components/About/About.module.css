@@ -7,7 +7,6 @@
 
 .aboutContent {
   display: flex;
-  align-items: center;
   flex-direction: column;
   gap: 2em;
   width: 100%;
@@ -17,8 +16,14 @@
 }
 
 .aboutAva {
-  margin: auto;
-  width: 30%;
   border-radius: 50%;
   filter: drop-shadow(0 2px 5px var(--accent-clr));
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  width: 30%;
 }
