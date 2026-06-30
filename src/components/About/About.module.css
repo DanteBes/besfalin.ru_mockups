@@ -6,12 +6,13 @@
 }
 
 .aboutContent {
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2em;
   width: 100%;
   padding: 0.7em;
-  max-width: 1200%;
+  max-width: 1200px;
   border-radius: 0.7em;
 }
 
@@ -26,4 +27,36 @@
   gap: 2em;
   align-items: center;
   width: 30%;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.textBlock {
+  height: max-content;
+  padding: 1em;
+  border: 1px solid var(--accent-clr);
+  border-radius: 0.7em;
+  background-color: var(--bg-clr);
+}
+
+.textBlockLow {
+  height: 4em;
+  overflow: hidden;
+}
+
+.titleWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+}
+
+.paragraph {
 }
