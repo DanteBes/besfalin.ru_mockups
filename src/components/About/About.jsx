@@ -15,10 +15,6 @@ function About() {
       <div className={styles.aboutContent}>
         <div className={styles.imageWrapper}>
           <img className={styles.aboutAva} src={ava} alt="А где картинка?" />
-          <span className={styles.aboutAttendance}>
-            Был в сети:
-            <time dateTime="2077-07-17 02:13">2077-07-10</time>
-          </span>
         </div>
         <div className={styles.textWrapper}>
           <div className={styles.textBlock}>
