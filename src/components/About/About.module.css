@@ -8,7 +8,7 @@
 .aboutContent {
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2em;
   width: 100%;
   padding: 0.7em;
@@ -22,11 +22,13 @@
 }
 
 .imageWrapper {
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 2em;
   align-items: center;
   width: 30%;
+  min-width: 350px;
 }
 
 .textWrapper {
@@ -35,6 +37,7 @@
   gap: 1em;
   margin: 0 auto;
   width: 50%;
+  min-width: 350px;
 }
 
 .textBlock {
