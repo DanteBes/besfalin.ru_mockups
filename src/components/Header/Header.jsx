@@ -2,6 +2,7 @@ import styles from './Header.module.css'
 import ava from '../../assets/ava.png'
 import { IoLanguage } from 'react-icons/io5'
 import { FaMoon } from 'react-icons/fa'
+import { CiMenuBurger } from 'react-icons/ci'
 
 function Header() {
   return (
@@ -49,6 +50,7 @@ function Header() {
             </li>
           </ul>
         </div>
+        <CiMenuBurger className={styles.headerBurger} />
       </div>
     </header>
   )

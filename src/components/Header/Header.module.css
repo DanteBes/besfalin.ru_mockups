@@ -85,6 +85,12 @@
     filter 0.3s;
 }
 
+.headerBurger {
+  display: none;
+  margin: auto 0;
+  font-size: 1.2rem;
+}
+
 .linkSetting:hover {
   cursor: pointer;
   filter: drop-shadow(0 2px 5px var(--accent-clr));
@@ -96,4 +102,26 @@
 
 .blockBtns {
   display: flex;
+}
+
+@media (width <= 900px) {
+  .headerTitle,
+  .headerSubTitle {
+    display: none;
+  }
+}
+
+@media (width <= 600px) {
+  .boxlink,
+  .blockBtns {
+    display: none;
+  }
+
+  .headerBurger {
+    display: flex;
+  }
+
+  .header {
+    padding: 1.2em;
+  }
 }

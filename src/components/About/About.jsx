@@ -2,6 +2,7 @@ import styles from './About.module.css'
 import ava from '../../assets/ava.png'
 import { IoTriangleOutline } from 'react-icons/io5'
 import { useState } from 'react'
+import { clsx } from 'clsx'
 
 function About() {
   const [isActive, setIsActive] = useState(true)
@@ -17,10 +18,14 @@ function About() {
           <img className={styles.aboutAva} src={ava} alt="А где картинка?" />
         </div>
         <div className={styles.textWrapper}>
-          <div className={styles.textBlock}>
+          <div className={clsx(styles.textBlock, { [styles.textBlockLow]: isActive })}>
             <div className={styles.titleWrapper}>
               <h1 className={styles.title}>title</h1>
-              <IoTriangleOutline onClick={handleToggle} />
+              <IoTriangleOutline
+                size="2em"
+                className={clsx(styles.textBlockBtn, { [styles.textBlockBtnOpen]: !isActive })}
+                onClick={handleToggle}
+              />
             </div>
             <p className={styles.paragraph}>
               lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam lectus risus, finibus
