@@ -1,5 +1,8 @@
 import styles from './Main.module.css'
-import ava from '../../assets/ava.png'
+{
+  /*import ava from '../../assets/ava.png'*/
+}
+import alfaava from '../../assets/AlfaAva.png'
 import { FaTelegramPlane, FaVk, FaYoutube } from 'react-icons/fa'
 
 function Main() {
@@ -37,7 +40,10 @@ function Main() {
         </div>
 
         <div className={styles.objF}>
-          <img className={styles.ava} src={ava} alt="А где картинка?" />
+          {/*<img className={styles.ava} src={ava} alt="А где картинка?" />*/}
+          <div className={styles.objFBackground}>
+            <img className={styles.objFBackgroundAva} src={alfaava} alt="А где картинка?" />
+          </div>
         </div>
       </div>
     </main>
