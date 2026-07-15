@@ -77,9 +77,29 @@
   padding: 2em;
 }
 
+@media (width <= 900px) {
+  .objF {
+    display: none;
+  }
+}
+
+@media (width <= 400px) {
+  .objF {
+    display: none;
+  }
+}
+
 .ava {
   margin: auto;
   border-radius: 50%;
   width: 80%;
   filter: drop-shadow(0 2px 5px var(--accent-clr));
+}
+
+.objFBackground {
+  border-radius: 50%;
+  background-color: #161e2a;
+}
+
+.objFBackgroundAva {
 }
