@@ -125,3 +125,32 @@
     padding: 1.2em;
   }
 }
+
+.menu {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  border: 1px solid var(--accent-clr);
+  background-color: var(--bg-clr);
+}
+
+.menuList {
+}
+
+.menuItem {
+}
+
+.menuLink {
+}
+
+.menuBtns {
+}
+
+.menuBtnsList {
+}
+
+.menuBtnsItem {
+}
+
+.menuBtnsLink {
+}

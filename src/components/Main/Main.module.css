@@ -74,6 +74,7 @@
 .objF {
   display: flex;
   width: 100%;
+  aspect-ratio: 1/1;
   padding: 2em;
 }
 
@@ -97,9 +98,16 @@
 }
 
 .objFBackground {
+  position: relative;
   border-radius: 50%;
   background-color: #161e2a;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
 }
 
 .objFBackgroundAva {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

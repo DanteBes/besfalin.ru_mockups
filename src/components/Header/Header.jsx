@@ -16,7 +16,7 @@ function Header() {
           </div>
         </a>
         <div className={styles.boxlink}>
-          <ol className={styles.listlink}>
+          <ul className={styles.listlink}>
             <li className={styles.objlink}>
               <a className={styles.link} href="/about">
                 Обо мне
@@ -32,7 +32,7 @@ function Header() {
                 Проекты
               </a>
             </li>
-          </ol>
+          </ul>
         </div>
         <div className={styles.blockBtns}>
           <ul className={styles.listSettings}>
@@ -52,7 +52,48 @@ function Header() {
         </div>
         <CiMenuBurger className={styles.headerBurger} />
       </div>
+      <HeaderMenu />
     </header>
+  )
+}
+
+function HeaderMenu() {
+  return (
+    <nav className={styles.menu}>
+      <div className={styles.menuLinks}>
+        <ul className={styles.menuList}>
+          <li className={styles.menuItem}>
+            <a className={styles.menuLink} href="/about">
+              Обо мне
+            </a>
+          </li>
+          <li className={styles.menuItem}>
+            <a className={styles.menuLink} href="/contacts">
+              Контакты
+            </a>
+          </li>
+          <li className={styles.menuItem}>
+            <a className={styles.Link} href="/projects">
+              Проекты
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.menuBtns}>
+        <ul className={styles.menuBtnsList}>
+          <li className={styles.menuBtnsItem}>
+            <a className={styles.menuBtnsLink}>
+              <IoLanguage />
+            </a>
+          </li>
+          <li className={styles.menuBtnsItem}>
+            <a className={styles.menuBtnsLink}>
+              <FaMoon />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   )
 }
 
