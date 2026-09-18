@@ -3,8 +3,21 @@ import ava from '../../assets/ava.png'
 import { IoLanguage } from 'react-icons/io5'
 import { FaMoon } from 'react-icons/fa'
 import { CiMenuBurger } from 'react-icons/ci'
+import { GoChevronLeft } from 'react-icons/go'
+import { useState } from 'react'
 
 function Header() {
+  //храним состояние ismenushow и меняем через сет
+  const [isMenuShow, setIsMenuShow] = useState(false)
+
+  const handleOpenMenu = () => {
+    setIsMenuShow(true)
+  }
+
+  const handleCloseMenu = () => {
+    setIsMenuShow(false)
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
@@ -50,16 +63,20 @@ function Header() {
             </li>
           </ul>
         </div>
-        <CiMenuBurger className={styles.headerBurger} />
+        <CiMenuBurger onClick={handleOpenMenu} className={styles.headerBurger} />
       </div>
-      <HeaderMenu />
+      {isMenuShow && <HeaderMenu onClose={handleCloseMenu} />}
     </header>
   )
 }
 
-function HeaderMenu() {
+function HeaderMenu({ onClose }) {
   return (
     <nav className={styles.menu}>
+      <button onClick={onClose} className={styles.menuClose}>
+        <GoChevronLeft />
+        <span>назад</span>
+      </button>
       <div className={styles.menuLinks}>
         <ul className={styles.menuList}>
           <li className={styles.menuItem}>
@@ -73,7 +90,7 @@ function HeaderMenu() {
             </a>
           </li>
           <li className={styles.menuItem}>
-            <a className={styles.Link} href="/projects">
+            <a className={styles.menuLink} href="/projects">
               Проекты
             </a>
           </li>

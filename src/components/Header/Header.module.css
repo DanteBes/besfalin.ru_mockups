@@ -127,6 +127,10 @@
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
   position: absolute;
   inset: 0;
   z-index: 10;
@@ -134,23 +138,63 @@
   background-color: var(--bg-clr);
 }
 
+.menuLinks {
+  width: 100%;
+  margin: auto;
+}
+
 .menuList {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .menuItem {
+  width: 100%;
+  display: flex;
 }
 
 .menuLink {
+  width: 100%;
+  font-size: 2rem;
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
 }
 
 .menuBtns {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
 }
 
 .menuBtnsList {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .menuBtnsItem {
+  display: flex;
 }
 
 .menuBtnsLink {
+  padding: 3rem;
+}
+
+.menuClose {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 3rem;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  & span {
+    font-size: 1rem;
+  }
 }
