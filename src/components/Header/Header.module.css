@@ -134,7 +134,7 @@
   position: absolute;
   inset: 0;
   z-index: 10;
-  border: 1px solid var(--accent-clr);
+  border-bottom: 1px solid var(--accent-clr);
   background-color: var(--bg-clr);
 }
 
@@ -162,6 +162,11 @@
   padding: 2rem;
   text-align: center;
   font-weight: 800;
+
+  &:hover {
+    color: var(--accent-clr);
+    filter: drop-shadow(2px 2px 2px var(--accent-clr));
+  }
 }
 
 .menuBtns {
@@ -182,6 +187,12 @@
 
 .menuBtnsLink {
   padding: 3rem;
+  transition: 0.3s;
+
+  &:active {
+    color: var(--accent-clr);
+    filter: drop-shadow(2px 2px 5px var(--accent-clr));
+  }
 }
 
 .menuClose {
