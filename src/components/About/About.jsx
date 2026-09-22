@@ -1,5 +1,8 @@
 import styles from './About.module.css'
-import ava from '../../assets/ava.png'
+{
+  /*import ava from '../../assets/ava.png'*/
+}
+import alfaava from '../../assets/AlfaAva.png'
 import { IoTriangleOutline } from 'react-icons/io5'
 import { useState } from 'react'
 import { clsx } from 'clsx'
@@ -15,7 +18,10 @@ function About() {
     <main className={styles.about}>
       <div className={styles.aboutContent}>
         <div className={styles.imageWrapper}>
-          <img className={styles.aboutAva} src={ava} alt="А где картинка?" />
+          {/*<img className={styles.aboutAva} src={ava} alt="А где картинка?" />*/}
+          <div className={styles.objFBackground}>
+            <img className={styles.objFBackgroundAva} src={alfaava} alt="А где картинка?" />
+          </div>
         </div>
         <div className={styles.textWrapper}>
           <div className={clsx(styles.textBlock, { [styles.textBlockLow]: isActive })}>

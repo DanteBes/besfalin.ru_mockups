@@ -16,9 +16,26 @@
   border-radius: 0.7em;
 }
 
-.aboutAva {
+.ava {
+  margin: auto;
   border-radius: 50%;
-  filter: drop-shadow(0 2px 5px var(--accent-clr));
+  width: 80%;
+}
+
+.objFBackground {
+  position: relative;
+  border-radius: 50%;
+  background-color: #161e2a;
+  filter: drop-shadow(0 4px 4px var(--accent-clr));
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.objFBackgroundAva {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .imageWrapper {
