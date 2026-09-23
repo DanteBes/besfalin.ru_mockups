@@ -6,6 +6,13 @@ import { CiMenuBurger } from 'react-icons/ci'
 import { GoChevronLeft } from 'react-icons/go'
 import { useState } from 'react'
 
+const randomSubTitle = ['web-debugger', 'разработчик сайта']
+
+function subTitle() {
+  const subLogo = Math.floor(Math.random() * randomSubTitle.lenght)
+  const textRandom = rSubtitle[subLigo]
+}
+
 function Header() {
   //храним состояние ismenushow и меняем через сет
   const [isMenuShow, setIsMenuShow] = useState(false)
@@ -25,7 +32,7 @@ function Header() {
           <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
           <div className={styles.headerName}>
             <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
-            <span className={styles.headerSubTitle}>web-developer</span>
+            <span className={styles.headerSubTitle}>{textRandom}</span>
           </div>
         </a>
         <div className={styles.boxlink}>
