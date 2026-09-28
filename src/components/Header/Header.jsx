@@ -8,12 +8,10 @@ import { useState } from 'react'
 
 const randomSubTitle = ['web-debugger', 'разработчик сайта']
 
-function subTitle() {
-  const subLogo = Math.floor(Math.random() * randomSubTitle.lenght)
-  const textRandom = rSubtitle[subLigo]
-}
-
 function Header() {
+  const n = Math.floor(Math.random() * randomSubTitle.length)
+  const textRandom = randomSubTitle[n]
+
   //храним состояние ismenushow и меняем через сет
   const [isMenuShow, setIsMenuShow] = useState(false)
 
