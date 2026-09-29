@@ -27,6 +27,29 @@
   color: var(--accent-clr);
   font-size: 2.3em;
   font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    cursor 0.75s step-end infinite,
+    printed_text 5s steps(29);
+}
+
+@keyframes cursor {
+  0% {
+    border-color: var(--accent-clr);
+  }
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: var(--accent-clr);
+  }
+}
+
+@keyframes printer_text {
+  from {
+    width: 0;
+  }
 }
 
 .previewSubtitle {
@@ -94,7 +117,6 @@
   margin: auto;
   border-radius: 50%;
   width: 80%;
-  filter: drop-shadow(0 2px 5px var(--accent-clr));
 }
 
 .objFBackground {
@@ -104,6 +126,7 @@
   width: 100%;
   aspect-ratio: 1/1;
   overflow: hidden;
+  filter: drop-shadow(0 4px 4px var(--accent-clr));
 }
 
 .objFBackgroundAva {
