@@ -9,8 +9,15 @@ import { useState } from 'react'
 const randomSubTitle = ['web-debugger', 'разработчик сайта']
 
 function Header() {
-  const n = Math.floor(Math.random() * randomSubTitle.length)
-  const textRandom = randomSubTitle[n]
+  // кладем в переменную состояния рандомную строку из массива
+  // важно делать именно так чтобы react не ругался на правило
+  // чистых функций. важно чтобы при загрузке компонента и
+  // отображении его всегда выдавался одинаковый результат/вид
+  // а мы с помощью useState сразу в момент рендера меняем
+  // текст в переменной, тогда ошибка пропадает.
+  const [textRandom] = useState(
+    () => randomSubTitle[Math.floor(Math.random() * randomSubTitle.length)]
+  )
 
   //храним состояние ismenushow и меняем через сет
   const [isMenuShow, setIsMenuShow] = useState(false)
