@@ -6,7 +6,7 @@ import { CiMenuBurger } from 'react-icons/ci'
 import { GoChevronLeft } from 'react-icons/go'
 import { useState } from 'react'
 
-const randomSubTitle = ['web-debugger', 'разработчик сайта']
+const randomSubTitle = ['web-ddeveloper', 'разработчик сайта']
 
 function Header() {
   // кладем в переменную состояния рандомную строку из массива
