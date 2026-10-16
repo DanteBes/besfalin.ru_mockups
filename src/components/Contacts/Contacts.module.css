@@ -1,22 +1,22 @@
 .previewContacts {
-    width: 100%;
-    display: flex;
-    border-radius: .5em;
-    justify-content: center;
-    background-color: #0d121e;
+  width: 100%;
+  display: flex;
+  border-radius: 0.5em;
+  justify-content: center;
+  background-color: #0d121e;
 }
 
 .previewContactTitle {
-    font-size: 3rem;
-    font-weight: 800;
+  font-size: 3rem;
+  font-weight: 800;
 }
 
 .previewContactSubTitle {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-clr);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-clr);
 }
 
 .contactsText {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }

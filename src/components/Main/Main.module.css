@@ -24,29 +24,34 @@
 }
 
 .previewTitle {
+  font-family: monospace;
   color: var(--accent-clr);
   font-size: 2.3em;
   font-weight: 800;
+  border-right: 3px solid var(--accent-clr);
   white-space: nowrap;
   overflow: hidden;
+  width: 16ch;
   animation:
     cursor 0.75s step-end infinite,
-    printed_text 5s steps(29);
+    printed-text 3s steps(16);
 }
 
 @keyframes cursor {
   0% {
     border-color: var(--accent-clr);
   }
+
   50% {
     border-color: transparent;
   }
+
   100% {
     border-color: var(--accent-clr);
   }
 }
 
-@keyframes printer_text {
+@keyframes printed-text {
   from {
     width: 0;
   }
