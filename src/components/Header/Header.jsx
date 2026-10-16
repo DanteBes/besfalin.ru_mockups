@@ -5,6 +5,7 @@ import { FaMoon } from 'react-icons/fa'
 import { CiMenuBurger } from 'react-icons/ci'
 import { GoChevronLeft } from 'react-icons/go'
 import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const randomSubTitle = ['web-ddeveloper', 'разработчик сайта']
 
@@ -31,60 +32,68 @@ function Header() {
   }
 
   return (
-    <header className={styles.header}>
-      <div className={styles.headerContent}>
-        <a href="/" className={styles.nameBlock}>
-          <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
-          <div className={styles.headerName}>
-            <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
-            <span className={styles.headerSubTitle}>{textRandom}</span>
+    <AnimatePresence>
+      <header className={styles.header}>
+        <div className={styles.headerContent}>
+          <a href="/" className={styles.nameBlock}>
+            <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
+            <div className={styles.headerName}>
+              <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
+              <span className={styles.headerSubTitle}>{textRandom}</span>
+            </div>
+          </a>
+          <div className={styles.boxlink}>
+            <ul className={styles.listlink}>
+              <li className={styles.objlink}>
+                <a className={styles.link} href="/about">
+                  Обо мне
+                </a>
+              </li>
+              <li className={styles.objlink}>
+                <a className={styles.link} href="/contacts">
+                  Контакты
+                </a>
+              </li>
+              <li className={styles.objlink}>
+                <a className={styles.link} href="/projects">
+                  Проекты
+                </a>
+              </li>
+            </ul>
           </div>
-        </a>
-        <div className={styles.boxlink}>
-          <ul className={styles.listlink}>
-            <li className={styles.objlink}>
-              <a className={styles.link} href="/about">
-                Обо мне
-              </a>
-            </li>
-            <li className={styles.objlink}>
-              <a className={styles.link} href="/contacts">
-                Контакты
-              </a>
-            </li>
-            <li className={styles.objlink}>
-              <a className={styles.link} href="/projects">
-                Проекты
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div className={styles.blockBtns}>
-          <ul className={styles.listSettings}>
-            <li className={styles.linkSettings}>
-              <a className={styles.linkSetting}>
-                <IoLanguage />
-              </a>
-              <a className={styles.linkSetting}>
-                {/*<CgDarkMode />*/}
-                <FaMoon />
-              </a>
-              {/*<a className={}>
+          <div className={styles.blockBtns}>
+            <ul className={styles.listSettings}>
+              <li className={styles.linkSettings}>
+                <a className={styles.linkSetting}>
+                  <IoLanguage />
+                </a>
+                <a className={styles.linkSetting}>
+                  {/*<CgDarkMode />*/}
+                  <FaMoon />
+                </a>
+                {/*<a className={}>
             <CgFormatJustify />
             </a>*/}
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
+          <CiMenuBurger onClick={handleOpenMenu} className={styles.headerBurger} />
         </div>
-        <CiMenuBurger onClick={handleOpenMenu} className={styles.headerBurger} />
-      </div>
-      {isMenuShow && <HeaderMenu onClose={handleCloseMenu} />}
-    </header>
+        {isMenuShow && <HeaderMenu onClose={handleCloseMenu} />}
+      </header>
+    </AnimatePresence>
   )
 }
 
 function HeaderMenu({ onClose }) {
   return (
-    <nav className={styles.menu}>
+    <motion.div
+      className={styles.menu}
+      initial={{ y: '-100%' }}
+      animate={{ y: 0 }}
+      exit={{ y: '-100%' }}
+      transition={{ duration: 0.3 }}
+    >
       <button onClick={onClose} className={styles.menuClose}>
         <GoChevronLeft />
         <span>назад</span>
@@ -122,7 +131,7 @@ function HeaderMenu({ onClose }) {
           </li>
         </ul>
       </div>
-    </nav>
+    </motion.div>
   )
 }
 
