@@ -21,10 +21,52 @@
   gap: 0.5em;
 }
 
-.headerLogo {
-  height: 50px;
+.headerAvatar {
+  position: relative;
+  isolation: isolate;
+  flex: 0 0 50px;
   width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background-color: var(--bg-clr);
+}
+
+.headerAvatarImage,
+.headerAvatarHead {
+  position: absolute;
+  top: -11%;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.headerAvatarImage {
+  z-index: 1;
+}
+
+.headerFrameTop,
+.headerFrameBottom {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #0d121e;
+}
+
+.headerFrameTop {
+  top: 0;
+  mask-image: radial-gradient(ellipse 50% 100% at 50% 100%, transparent 100%, #000 100%);
+}
+
+.headerFrameBottom {
+  bottom: 0;
+  mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, transparent 100%, #000 100%);
+}
+
+.headerAvatarHead {
+  z-index: 3;
+  clip-path: inset(0 0 44% 0);
 }
 
 .headerName {

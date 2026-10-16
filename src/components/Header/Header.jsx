@@ -1,5 +1,5 @@
 import styles from './Header.module.css'
-import ava from '../../assets/ava.png'
+import alfaava from '../../assets/AlfaAva.png'
 import { IoLanguage } from 'react-icons/io5'
 import { FaMoon } from 'react-icons/fa'
 import { CiMenuBurger } from 'react-icons/ci'
@@ -36,7 +36,12 @@ function Header() {
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <a href="/" className={styles.nameBlock}>
-            <img className={styles.headerLogo} src={ava} alt="А где картинка?" />
+            <div className={styles.headerAvatar}>
+              <img className={styles.headerAvatarImage} src={alfaava} alt="А где картинка?" />
+              <div className={styles.headerFrameTop} aria-hidden="true" />
+              <div className={styles.headerFrameBottom} aria-hidden="true" />
+              <img className={styles.headerAvatarHead} src={alfaava} alt="" aria-hidden="true" />
+            </div>
             <div className={styles.headerName}>
               <h1 className={styles.headerTitle}>Ярослав Бесфалин</h1>
               <span className={styles.headerSubTitle}>{textRandom}</span>

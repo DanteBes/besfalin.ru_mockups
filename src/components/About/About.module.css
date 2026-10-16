@@ -24,18 +24,49 @@
 
 .objFBackground {
   position: relative;
-  border-radius: 50%;
-  background-color: #161e2a;
-  filter: drop-shadow(0 4px 4px var(--accent-clr));
+  isolation: isolate;
   width: 100%;
-  aspect-ratio: 1/1;
-  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--bg-clr);
+}
+
+.objFBackgroundAva,
+.objFBackgroundAvaHead {
+  position: absolute;
+  top: -11%;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .objFBackgroundAva {
+  z-index: 1;
+}
+
+.objFFrameTop,
+.objFFrameBottom {
   position: absolute;
-  top: 0;
+  z-index: 2;
   left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #0d121e;
+}
+
+.objFFrameTop {
+  top: 0;
+  mask-image: radial-gradient(ellipse 50% 100% at 50% 100%, transparent 100%, #000 100%);
+}
+
+.objFFrameBottom {
+  bottom: 0;
+  mask-image: radial-gradient(ellipse 50% 100% at 50% 0%, transparent 100%, #000 100%);
+}
+
+.objFBackgroundAvaHead {
+  z-index: 3;
+  clip-path: inset(0 0 44% 0);
 }
 
 .imageWrapper {

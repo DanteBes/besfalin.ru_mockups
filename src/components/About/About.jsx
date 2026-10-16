@@ -21,6 +21,9 @@ function About() {
           {/*<img className={styles.aboutAva} src={ava} alt="А где картинка?" />*/}
           <div className={styles.objFBackground}>
             <img className={styles.objFBackgroundAva} src={alfaava} alt="А где картинка?" />
+            <div className={styles.objFFrameTop} aria-hidden="true" />
+            <div className={styles.objFFrameBottom} aria-hidden="true" />
+            <img className={styles.objFBackgroundAvaHead} src={alfaava} alt="" aria-hidden="true" />
           </div>
         </div>
         <div className={styles.textWrapper}>
