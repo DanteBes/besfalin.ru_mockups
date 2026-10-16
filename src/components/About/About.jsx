@@ -25,7 +25,14 @@ function About() {
             <div className={styles.objFFrameBottom} aria-hidden="true" />
             <img className={styles.objFBackgroundAvaHead} src={alfaava} alt="" aria-hidden="true" />
           </div>
+          <div className={styles.fun}>
+            <p className={styles.funInfo}>Был в сети: 01.04.2001, 10:23 </p>
+            <a href="#" className={styles.funLink}>
+              Поддержать❤️
+            </a>
+          </div>
         </div>
+
         <div className={styles.textWrapper}>
           <div className={clsx(styles.textBlock, { [styles.textBlockLow]: isActive })}>
             <div className={styles.titleWrapper}>
