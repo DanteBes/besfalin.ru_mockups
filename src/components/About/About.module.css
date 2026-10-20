@@ -16,6 +16,34 @@
   border-radius: 0.7em;
 }
 
+.aboutMinContent {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutContentMinInfo {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.aboutContentLinkSupport {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5em;
+  color: var(--bg-clr);
+  text-align: center;
+  background-color: var(--accent-clr);
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: var(--accent-clr);
+    background-color: var(--bg-clr);
+  }
+}
+
 .ava {
   margin: auto;
   border-radius: 50%;
