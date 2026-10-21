@@ -53,3 +53,14 @@
   color: var(--bg-clr);
   background-color: var(--accent-clr);
 }
+
+@media (width <= 768px) {
+  .blogContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .blogFooter {
+    grid-row: 1;
+    padding: 0 0 2rem;
+  }
+}
