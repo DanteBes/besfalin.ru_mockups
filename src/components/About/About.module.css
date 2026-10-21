@@ -38,6 +38,7 @@
   background-color: var(--accent-clr);
   transition: 0.3s;
   cursor: pointer;
+
   &:hover {
     color: var(--accent-clr);
     background-color: var(--bg-clr);
