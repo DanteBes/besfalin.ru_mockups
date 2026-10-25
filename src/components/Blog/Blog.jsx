@@ -12,7 +12,7 @@ function Blog() {
 
           <ul className={styles.blogList}>
             <li className={styles.blogItem}>
-              <a className={styles.blogLink}>
+              <a href="/post" className={styles.blogLink}>
                 <h2 className={styles.blogTitle}>01 Как я начал кодить</h2>
                 <time className={styles.blogTime} dateTime="2026-06-06 12:00">
                   6 июня
