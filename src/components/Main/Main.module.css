@@ -3,7 +3,7 @@
   justify-content: center;
   width: 100%;
   border-radius: 0.5em;
-  background-color: #0d121e;
+  background-color: var(--panel-clr-main);
 }
 
 .previewMainContent {

@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   border-radius: 0.5em;
-  background-color: #0d121e;
+  background-color: var(--panel-clr-main);
 }
 
 .aboutContent {

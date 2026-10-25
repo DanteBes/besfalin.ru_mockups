@@ -3,7 +3,8 @@
   justify-content: center;
   width: 100%;
   padding: 0.7em;
-  background-color: #0d121e;
+  background-color: var(--panel-clr);
+  backdrop-filter: blur(3px);
   color: #fff;
 }
 

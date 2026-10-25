@@ -5,7 +5,8 @@
   width: 100%;
   padding: 0.7em;
   color: var(--txt-clr);
-  background-color: #0d121e;
+  background-color: var(--panel-clr);
+  backdrop-filter: blur(5px);
 }
 
 .footerContent {

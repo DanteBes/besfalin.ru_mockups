@@ -1,5 +1,7 @@
 :root {
   --accent-clr: #f0c15c;
   --bg-clr: #151c28;
+  --panel-clr-main: #0d121e;
+  --panel-clr: color-mix(in srgb, #0d121e 72%, transparent);
   --txt-clr: #eef1f6;
 }

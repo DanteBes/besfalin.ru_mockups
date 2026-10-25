@@ -3,7 +3,7 @@
   display: flex;
   border-radius: 0.5em;
   justify-content: center;
-  background-color: #0d121e;
+  background-color: var(--panel-clr);
 }
 
 .previewContactTitle {
