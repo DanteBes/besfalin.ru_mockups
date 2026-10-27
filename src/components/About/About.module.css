@@ -108,7 +108,7 @@
   min-width: 250px;
 }
 
-.textWrapper {
+.contentWrapper {
   display: flex;
   flex-direction: column;
   gap: 1em;
