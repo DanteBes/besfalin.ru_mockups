@@ -117,6 +117,17 @@
   min-width: 350px;
 }
 
+.contentWrapperBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  padding: 0.5em;
+}
+
+.contentWrapperBoxText {
+  font-size: 1rem;
+}
+
 .textBlock {
   display: flex;
   flex-direction: column;
