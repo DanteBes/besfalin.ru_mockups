@@ -32,7 +32,7 @@ function Header() {
   }
 
   return (
-    <AnimatePresence>
+    <>
       <header className={styles.header}>
         <div className={styles.headerContent}>
           <a href="/" className={styles.nameBlock}>
@@ -64,6 +64,11 @@ function Header() {
                   Проекты
                 </a>
               </li>
+              <li className={styles.objlink}>
+                <a className={styles.link} href="/posts">
+                  Посты
+                </a>
+              </li>
             </ul>
           </div>
           <div className={styles.blockBtns}>
@@ -84,9 +89,11 @@ function Header() {
           </div>
           <CiMenuBurger onClick={handleOpenMenu} className={styles.headerBurger} />
         </div>
-        {isMenuShow && <HeaderMenu onClose={handleCloseMenu} />}
       </header>
-    </AnimatePresence>
+      {/* Меню рендерим вне header, чтобы его fixed-позиционирование и z-index
+          не зависели от шапки. */}
+      <AnimatePresence>{isMenuShow && <HeaderMenu onClose={handleCloseMenu} />}</AnimatePresence>
+    </>
   )
 }
 
@@ -118,6 +125,11 @@ function HeaderMenu({ onClose }) {
           <li className={styles.menuItem}>
             <a className={styles.menuLink} href="/projects">
               Проекты
+            </a>
+          </li>
+          <li className={styles.menuItem}>
+            <a className={styles.menuLink} href="/posts">
+              Посты
             </a>
           </li>
         </ul>

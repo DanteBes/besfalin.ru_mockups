@@ -7,6 +7,7 @@ import Blog from './components/Blog/Blog'
 import About from './components/About/About'
 import Contacts from './components/Contacts/Contacts'
 import Projects from './components/Projects/Projects'
+import Posts from './components/Posts/Posts'
 import Post from './components/Post/Post'
 import Footer from './components/Footer/Footer'
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/posts" element={<Posts />} />
           <Route path="/post/:slug" element={<Post />} />
         </Routes>
         <Footer />
