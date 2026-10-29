@@ -22,7 +22,13 @@ function About() {
 
           <div className={styles.aboutMinContent}>
             <p className={styles.aboutContentMinInfo}>Был в сети: 01.04.2001, 10:23 </p>
-            <a href="#" className={styles.aboutContentLinkSupport}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              title="вас перенаправит в банкомат"
+              href="https://www.donationalerts.com/r/dantebesfalin"
+              className={styles.aboutContentLinkSupport}
+            >
               Поддержать❤️
             </a>
           </div>

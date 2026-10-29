@@ -1,0 +1,46 @@
+.markdown {
+  max-width: 720px;
+  margin-inline: auto;
+  line-height: 1.75;
+  overflow-wrap: anywhere;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--accent-clr);
+}
+
+.markdown p {
+  margin-block: 1.25em;
+}
+
+.markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.markdown pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.markdown blockquote {
+  margin-inline: 0;
+  padding-left: 1rem;
+  border-left: 2px solid currentcolor;
+  opacity: 0.8;
+}
+
+.markdown table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}

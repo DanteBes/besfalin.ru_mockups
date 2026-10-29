@@ -30,10 +30,6 @@
   padding: 0.2em;
 }
 
-.blogTime {
-  opacity: 0.8;
-}
-
 .blogFooter {
   display: flex;
   flex-direction: column;
@@ -51,6 +47,7 @@
   border-radius: 0.7em;
   font-size: 1.2rem;
   width: fit-content;
+  font-weight: 700;
   color: var(--bg-clr);
   background-color: var(--accent-clr);
 }

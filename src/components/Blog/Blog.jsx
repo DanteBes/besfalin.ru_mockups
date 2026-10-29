@@ -1,5 +1,7 @@
 import styles from './Blog.module.css'
+import { Link } from 'react-router'
 import { CgArrowLongRight } from 'react-icons/cg'
+import { posts } from '../../content/posts'
 
 function Blog() {
   return (
@@ -11,30 +13,15 @@ function Blog() {
           </div>
 
           <ul className={styles.blogList}>
-            <li className={styles.blogItem}>
-              <a href="/post" className={styles.blogLink}>
-                <h2 className={styles.blogTitle}>01 Как я начал кодить</h2>
-                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
-                  6 июня
-                </time>
-              </a>
-            </li>
-            <li className={styles.blogItem}>
-              <a className={styles.blogLink}>
-                <h2 className={styles.blogTitle}>02 Сломался планшет</h2>
-                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
-                  6 июня
-                </time>
-              </a>
-            </li>
-            <li className={styles.blogItem}>
-              <a className={styles.blogLink}>
-                <h2 className={styles.blogTitle}>03 Мне выпал ЛЕОН!!!</h2>
-                <time className={styles.blogTime} dateTime="2026-06-06 12:00">
-                  6 июня
-                </time>
-              </a>
-            </li>
+            {posts.map((post, index) => (
+              <li key={post.slug} className={styles.blogItem}>
+                <Link to={`/post/${post.slug}`} className={styles.blogLink}>
+                  <h2 className={styles.blogTitle}>
+                    {String(index + 1).padStart(2, '0')} {post.title}
+                  </h2>
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -45,7 +32,7 @@ function Blog() {
             произошла осложненная ситуация: я задушился пуповиной, и мне поставили диагноз ДЦП
             (детский церебральный паралич).
           </p>
-          <a className={styles.blogLinkNext} href="#">
+          <a className={styles.blogLinkNext} href="/about">
             Читать далее <CgArrowLongRight />
           </a>
         </div>
