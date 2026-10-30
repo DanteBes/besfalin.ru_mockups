@@ -89,19 +89,31 @@ function About() {
                 я продолжил учиться. С момента первой операции под коленками я больше не мог
                 полноценно сгибать ноги и сидеть как все дети.
               </p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
-              <p className={styles.contentWrapperBoxText}></p>
+              <p className={styles.contentWrapperBoxText}>
+                Я научился пользоваться мобильным устройством носом, так как руками вообще не мог
+                управлять. Сначала все получалось медленно, но со временем моя скорость
+                увеличивалась. Когда я учился в пятом-шестом классе, я уже пользовался планшетом для
+                написания текста под диктовку, а остальное, например, математику и чтение, делал в
+                реальности. Учительница записывала мои ответы. Помню, что я не любил дроби, и мы с
+                учительницей шутили по этому поводу. Например, называли ноль «дыркой от бублика».
+                Учительница была замечательной, никогда не давала загрустить и относилась к обучению
+                позитивно. Я окончил школу на пятерки и получил аттестат.
+              </p>
+              <p className={styles.contentWrapperBoxText}>
+                После школы я не знал, чем заняться. В 2019 году моя сестра познакомила меня со
+                своим парнем, программистом. Он предложил мне заняться веб-разработкой. Сначала он
+                меня учил, а потом я стал учиться сам через YouTube. Процесс был трудным, и я много
+                раз бросал, но снова возвращался. В 2022 году я познакомился в онлайн-игре с лучшим
+                другом, программистом, который помог мне выйти на новый уровень и научил многому. Я
+                очень благодарен ему за это, он мне уже как брат. Братик, если ты читаешь это, знай,
+                что ты лучший!
+              </p>
             </div>
           </TextBlock>
-          <TextBlock title={'Новая карточка'} isOpen={false}>
-            test
+          <TextBlock title={'Скоро…'} isOpen={false}>
+            <div className={styles.contentWrapperBox}>
+              <p className={styles.contentWrapperBoxText}>Очень скоро………если придумаю🫡</p>
+            </div>
           </TextBlock>
         </div>
       </div>
