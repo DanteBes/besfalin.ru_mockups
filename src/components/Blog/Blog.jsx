@@ -32,7 +32,7 @@ function Blog() {
             произошла осложненная ситуация: я задушился пуповиной, и мне поставили диагноз ДЦП
             (детский церебральный паралич).
           </p>
-          <a className={styles.blogLinkNext} href="/about">
+          <a className={styles.blogLinkNext} href="/about" title='не переходи по ссылке!'>
             Читать далее <CgArrowLongRight />
           </a>
         </div>
