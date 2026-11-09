@@ -3,9 +3,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0.7em;
+  padding: 1.7rem 0.7rem;
   color: var(--txt-clr);
   background-color: var(--panel-clr);
+  margin-top: auto;
 }
 
 .footerContent {
