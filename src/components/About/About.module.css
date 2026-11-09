@@ -169,8 +169,8 @@
 подзаголовок внутри текста about в карточке
 */
 .subheader {
-    line-height: 1.25;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: var(--accent-clr);
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: var(--accent-clr);
 }
