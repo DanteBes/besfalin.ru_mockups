@@ -11,6 +11,7 @@ import Projects from './components/Projects/Projects'
 import Posts from './components/Posts/Posts'
 import Post from './components/Post/Post'
 import Footer from './components/Footer/Footer'
+import Error404 from './components/Error404/Error404'
 
 // Скроллит к элементу по хэшу после того, как React отрендерил содержимое
 // страницы. Браузер сам не может это сделать при загрузке /about#subheader3
@@ -60,6 +61,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/post/:slug" element={<Post />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </div>
