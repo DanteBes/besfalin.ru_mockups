@@ -1,7 +1,7 @@
 .about {
   width: 100%;
   display: flex;
-  border-radius: 0.5em;
+  border-radius: var(--radius-sm);
   background-color: var(--panel-clr-main);
 }
 
@@ -9,16 +9,16 @@
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: var(--space-8);
   width: 100%;
-  padding: 0.7em;
-  max-width: 1200px;
-  border-radius: 0.7em;
+  padding: var(--space-3);
+  max-width: var(--container-max);
+  border-radius: var(--radius-md);
 }
 
 .aboutMinContent {
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-2);
   align-items: center;
   flex-direction: column;
 }
@@ -29,10 +29,10 @@
 
 .aboutContentLinkSupport {
   width: 100%;
-  padding: 0.5rem;
-  font-size: 1.2rem;
+  padding: var(--space-2);
+  font-size: var(--text-lg);
   font-weight: 700;
-  border-radius: 0.5em;
+  border-radius: var(--radius-sm);
   color: var(--bg-clr);
   text-align: center;
   background-color: var(--accent-clr);
@@ -47,7 +47,7 @@
 
 .ava {
   margin: auto;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   width: 80%;
 }
 
@@ -56,7 +56,7 @@
   isolation: isolate;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   background-color: var(--bg-clr);
 }
 
@@ -102,45 +102,45 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: var(--space-8);
   align-items: center;
   width: 30%;
-  min-width: 250px;
+  min-width: 15.625rem;
 }
 
 .contentWrapper {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--space-4);
   margin: 0 auto;
   width: 50%;
-  min-width: 350px;
+  min-width: 21.875rem;
 }
 
 .contentWrapperBox {
   display: flex;
   flex-direction: column;
-  gap: 0.8em;
-  padding: 0.5em;
+  gap: var(--space-3);
+  padding: var(--space-2);
 }
 
 .contentWrapperBoxText {
-  font-size: 1rem;
+  font-size: var(--text-sm);
 }
 
 .textBlock {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--space-4);
   height: max-content;
-  padding: 1em;
-  border: 1px solid var(--accent-clr);
-  border-radius: 0.7em;
+  padding: var(--space-4);
+  border: var(--border-thin) solid var(--accent-clr);
+  border-radius: var(--radius-md);
   background-color: var(--bg-clr);
 }
 
 .textBlockLow {
-  height: 5em;
+  height: var(--space-20);
   overflow: hidden;
 }
 
@@ -169,7 +169,7 @@
 подзаголовок внутри текста about в карточке
 */
 .subheader {
-  line-height: 1.25;
+  line-height: var(--leading-tight);
   letter-spacing: -0.03em;
   text-align: center;
   color: var(--accent-clr);

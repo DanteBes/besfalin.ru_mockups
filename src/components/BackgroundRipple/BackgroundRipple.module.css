@@ -32,9 +32,9 @@
 .cell {
   cursor: pointer;
   opacity: 0.55;
-  border: 0.5px solid var(--cell-border-color);
+  border: var(--border-hairline) solid var(--cell-border-color);
   background-color: var(--cell-fill-color);
-  box-shadow: inset 0 0 40px 1px var(--cell-shadow-color);
+  box-shadow: inset 0 0 2.5rem var(--border-thin) var(--cell-shadow-color);
   transition: opacity 50ms ease;
   will-change: opacity;
 }

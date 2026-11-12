@@ -2,33 +2,33 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  border-radius: 0.5em;
+  border-radius: var(--radius-sm);
   background-color: var(--panel-clr-main);
 }
 
 .previewMainContent {
   display: flex;
   align-items: center;
-  padding: 0.7em;
+  padding: var(--space-3);
   width: 100%;
-  max-width: 1200px;
-  border-radius: 0.5em;
+  max-width: var(--container-max);
+  border-radius: var(--radius-sm);
 }
 
 .previewLogo {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-  padding: 1em;
-  padding-left: 3em;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  padding-left: var(--space-12);
 }
 
 .previewTitle {
   font-family: monospace;
   color: var(--accent-clr);
-  font-size: clamp(1.8rem, 1.5565rem + 0.9913vw, 2.3rem);
+  font-size: var(--text-hero);
   font-weight: 800;
-  border-right: 3px solid var(--accent-clr);
+  border-right: var(--border-accent) solid var(--accent-clr);
   white-space: nowrap;
   overflow: hidden;
   width: 16ch;
@@ -58,22 +58,22 @@
 }
 
 .previewSubtitle {
-  font-size: 2rem;
+  font-size: var(--text-2xl);
   font-weight: 600;
-  line-height: 1.5;
+  line-height: var(--leading-normal);
 }
 
 .previewParagraph {
-  font-size: 1.3rem;
-  min-width: 300px;
+  font-size: var(--text-lg);
+  min-width: 18.75rem;
   width: 75%;
 }
 
 .previewMainList {
   display: flex;
   width: 100%;
-  padding-top: 5em;
-  transform: translate(-16px);
+  padding-top: var(--space-20);
+  transform: translate(calc(var(--space-4) * -1));
 }
 
 .previewListObject {
@@ -82,7 +82,7 @@
 
 .previewLink {
   color: var(--txt-clr);
-  padding: 1em;
+  padding: var(--space-4);
 
   transition:
     color 0.5s,
@@ -92,7 +92,7 @@
 .previewLink:hover {
   cursor: pointer;
   color: var(--accent-clr);
-  filter: drop-shadow(0 2px 5px var(--accent-clr));
+  filter: drop-shadow(var(--shadow-glow));
 
   transition:
     color 0s,
@@ -103,16 +103,16 @@
   display: flex;
   width: 100%;
   aspect-ratio: 1/1;
-  padding: 2em;
+  padding: var(--space-8);
 }
 
-@media (width <= 900px) {
+@media (width <= 56.25rem) {
   .objF {
     display: none;
   }
 }
 
-@media (width <= 400px) {
+@media (width <= 25rem) {
   .objF {
     display: none;
   }
@@ -120,7 +120,7 @@
 
 .ava {
   margin: auto;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   width: 80%;
 }
 
@@ -129,7 +129,7 @@
   isolation: isolate;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: var(--radius-round);
   background-color: var(--bg-clr);
 }
 

@@ -1,18 +1,18 @@
 .previewContacts {
   width: 100%;
   display: flex;
-  border-radius: 0.5em;
+  border-radius: var(--radius-sm);
   justify-content: center;
   background-color: var(--panel-clr);
 }
 
 .previewContactTitle {
-  font-size: 3rem;
+  font-size: var(--text-3xl);
   font-weight: 800;
 }
 
 .previewContactSubTitle {
-  font-size: 1.5rem;
+  font-size: var(--text-xl);
   font-weight: 700;
   color: var(--accent-clr);
 }

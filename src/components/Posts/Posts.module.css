@@ -1,7 +1,7 @@
 .posts {
   display: flex;
   width: 100%;
-  border-radius: 0.5em;
+  border-radius: var(--radius-sm);
   background-color: var(--panel-clr-main);
 }
 
@@ -9,23 +9,23 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--space-4);
   width: 100%;
-  max-width: 1200px;
-  padding: 0.7em;
-  border-radius: 0.7em;
+  max-width: var(--container-max);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
 }
 
 .postsTitle {
-  padding: 0.5em;
-  font-size: 2rem;
+  padding: var(--space-4);
+  font-size: var(--text-2xl);
   font-weight: 800;
 }
 
 .postsList {
   display: flex;
   flex-direction: column;
-  gap: 0.7em;
+  gap: var(--space-3);
 }
 
 .postsItem {
@@ -34,12 +34,12 @@
 
 .postsLink {
   display: flex;
-  gap: 1em;
+  gap: var(--space-4);
   width: 100%;
-  padding: 1em;
-  border: 1px solid var(--accent-clr);
-  border-radius: 0.7em;
-  font-size: 1.2rem;
+  padding: var(--space-4);
+  border: var(--border-thin) solid var(--accent-clr);
+  border-radius: var(--radius-md);
+  font-size: var(--text-lg);
   font-weight: 700;
   background-color: var(--bg-clr);
   transition: 0.3s;
@@ -47,7 +47,7 @@
 
 .postsLink:hover {
   color: var(--accent-clr);
-  filter: drop-shadow(0 2px 5px var(--accent-clr));
+  filter: drop-shadow(var(--shadow-glow));
 }
 
 .postsNumber {
@@ -55,6 +55,6 @@
 }
 
 .postsEmpty {
-  padding: 0.5em;
+  padding: var(--space-2);
   color: rgba(255, 255, 255, 0.5);
 }

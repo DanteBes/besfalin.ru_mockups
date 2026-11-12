@@ -6,7 +6,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: var(--space-4);
 }
 
 .rootsContent > * {
