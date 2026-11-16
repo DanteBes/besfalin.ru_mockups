@@ -12,7 +12,7 @@ import Posts from './components/Posts/Posts'
 import Post from './components/Post/Post'
 import Footer from './components/Footer/Footer'
 import Error404 from './components/Error404/Error404'
-
+import DeveloperMode from './components/DeveloperMode/DeveloperMode'
 // Скроллит к элементу по хэшу после того, как React отрендерил содержимое
 // страницы. Браузер сам не может это сделать при загрузке /about#subheader3
 // или при переходе через React Router, потому что элемента ещё нет в DOM.
@@ -61,6 +61,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/post/:slug" element={<Post />} />
+          <Route path="/dev" element={<DeveloperMode />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />

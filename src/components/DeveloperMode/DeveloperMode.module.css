@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    max-width: var(--container-max);
+    gap: var(--space-4);
+    justify-content: space-around;
+    background-color: var(--panel-clr-main);
+    border-radius: var(--radius-sm);
+}
+
+.colorPicker {
+
+}
+
+.elementsContainer {
+    background-color: black;
+}
