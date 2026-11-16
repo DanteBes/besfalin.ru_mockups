@@ -7,7 +7,9 @@ function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.footerTextContainer}>
           <span className={styles.footerText}>© 2026 Dante Besfalin</span>
-          <a href="/dev" className={styles.devButton}>Для разрабов</a>
+          <a href="/dev" className={styles.devButton}>
+            Для разрабов
+          </a>
         </div>
         <ul className={styles.footerList}>
           <li className={styles.footerObject}>

@@ -1,55 +1,54 @@
 .main {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    max-width: var(--container-max);
-    gap: var(--space-4);
-    justify-content: space-around;
-    background-color: var(--panel-clr-main);
-    border-radius: var(--radius-sm);
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  max-width: var(--container-max);
+  gap: var(--space-4);
+  justify-content: space-around;
+  background-color: var(--panel-clr-main);
+  border-radius: var(--radius-sm);
 }
 
 .side {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
 
-    & input {
-        padding: var(--space-4);
-        border: var(--border-thin) solid var(--accent-clr);
-        border-radius: var(--radius-md);
-        font-size: var(--text-lg);
-        font-weight: 700;
-        background-color: var(--bg-clr);
-    }
+  & input {
+    padding: var(--space-4);
+    border: var(--border-thin) solid var(--accent-clr);
+    border-radius: var(--radius-md);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    background-color: var(--bg-clr);
+  }
 }
 
 .containerColors {
-    display: flex;
-    gap: var(--space-2);
-    justify-content: center;
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
 }
 
 .colorInputContainer {
-    position: relative;
-    font-family: monospace;
+  position: relative;
+  font-family: monospace;
 }
 
 .copyIcon {
-    position: absolute;
-    top: var(--space-2);
-    right: var(--space-2);
-    height: var(--space-5);
-    width: var(--space-5);
-    color: var(--accent-clr);
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  height: var(--space-5);
+  width: var(--space-5);
+  color: var(--accent-clr);
 }
 
 .colorPicker {
-
 }
 
 .elementsContainer {
-    background-color: black;
+  background-color: black;
 }

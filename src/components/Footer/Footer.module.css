@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   width: 100%;
   padding: var(--space-6) var(--space-3);
   color: var(--txt-clr);
@@ -40,18 +39,18 @@
 }
 
 .devButton {
-    padding: var(--space-2);
-    font-size: var(--text-md);
-    font-weight: 700;
-    border-radius: var(--radius-sm);
-    color: var(--bg-clr);
-    text-align: center;
-    background-color: var(--accent-clr);
-    width: fit-content;
+  padding: var(--space-2);
+  font-size: var(--text-md);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  color: var(--bg-clr);
+  text-align: center;
+  background-color: var(--accent-clr);
+  width: fit-content;
 }
 
 .footerTextContainer {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
 }
