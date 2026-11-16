@@ -5,7 +5,10 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <span className={styles.footerText}>© 2026 Dante Besfalin</span>
+        <div className={styles.footerTextContainer}>
+          <span className={styles.footerText}>© 2026 Dante Besfalin</span>
+          <a href="/dev" className={styles.devButton}>Для разрабов</a>
+        </div>
         <ul className={styles.footerList}>
           <li className={styles.footerObject}>
             <a className={styles.footerLink}>
