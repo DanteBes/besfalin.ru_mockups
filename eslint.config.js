@@ -19,7 +19,6 @@ export default defineConfig([
     },
     rules: {
       'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
-      'no-console': 'warn',
       'no-unused-expressions': 'error',
       'no-undef': 'error',
       'no-var': 'error',

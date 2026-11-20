@@ -24,6 +24,13 @@
     font-weight: 700;
     background-color: var(--bg-clr);
   }
+
+  & .colorPicker {
+      display: flex;
+      padding: 0;
+      width: var(--space-16);
+      height: var(--space-16);
+  }
 }
 
 .containerColors {
@@ -46,9 +53,7 @@
   color: var(--accent-clr);
 }
 
-.colorPicker {
-}
-
 .elementsContainer {
-  background-color: black;
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
 }
