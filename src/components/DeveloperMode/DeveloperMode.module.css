@@ -26,10 +26,10 @@
   }
 
   & .colorPicker {
-      display: flex;
-      padding: 0;
-      width: var(--space-16);
-      height: var(--space-16);
+    display: flex;
+    padding: 0;
+    width: var(--space-16);
+    height: var(--space-16);
   }
 }
 
