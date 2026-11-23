@@ -31,42 +31,66 @@ function DeveloperMode() {
           // выбор цвета темы
         }
         <div className={styles.containerColors}>
-          <input
-            type="color"
-            value={bgColor}
-            onChange={(e) => {
-              setBgColor(e.target.value)
-            }}
-            name={'color2'}
-            className={styles.colorPicker}
-          ></input>
-          <input
-            type="color"
-            value={textColor}
-            onChange={(e) => {
-              setTextColor(e.target.value)
-            }}
-            name={'color2'}
-            className={styles.colorPicker}
-          ></input>
-          <input
-            type="color"
-            value={accentColor}
-            onChange={(e) => {
-              setAccentColor(e.target.value)
-            }}
-            name={'color3'}
-            className={styles.colorPicker}
-          ></input>
-          <input
-            type="color"
-            value={panelColor}
-            onChange={(e) => {
-              setPanelColor(e.target.value)
-            }}
-            name={'color4'}
-            className={styles.colorPicker}
-          ></input>
+          <div className={styles.colorsRow}>
+            <input
+              type="color"
+              value={bgColor}
+              onChange={(e) => {
+                setBgColor(e.target.value)
+              }}
+              name={'color1'}
+              id={'color1'}
+              className={styles.colorPicker}
+            ></input>
+            <label className={styles.colorPickerLabel} for={'color1'}>
+              Фон:<br></br> меняется цвет основного фона сайта.
+            </label>
+          </div>
+          <div className={styles.colorsRow}>
+            <input
+              type="color"
+              value={textColor}
+              onChange={(e) => {
+                setTextColor(e.target.value)
+              }}
+              name={'color2'}
+              id={'color2'}
+              className={styles.colorPicker}
+            ></input>
+            <label className={styles.colorPickerLabel} for={'color2'}>
+              Текст:<br></br> меняется цвет всего текста на сайте, кроме кнопок
+            </label>
+          </div>
+          <div className={styles.colorsRow}>
+            <input
+              type="color"
+              value={accentColor}
+              onChange={(e) => {
+                setAccentColor(e.target.value)
+              }}
+              name={'color3'}
+              id={'color3'}
+              className={styles.colorPicker}
+            ></input>
+            <label className={styles.colorPickerLabel} for={'color3'}>
+              Акцент:<br></br> меняется цвет кнопок, рамок и иконок
+            </label>
+          </div>
+          <div className={styles.colorsRow}>
+            <input
+              type="color"
+              value={panelColor}
+              onChange={(e) => {
+                setPanelColor(e.target.value)
+              }}
+              name={'color4'}
+              id={'color4'}
+              className={styles.colorPicker}
+            ></input>
+            <label className={styles.colorPickerLabel} for={'color4'}>
+              Фон секций: <br></br> просто фон секций
+            </label>
+          </div>
         </div>
         <div className={styles.colorInputContainer}>
           <input
