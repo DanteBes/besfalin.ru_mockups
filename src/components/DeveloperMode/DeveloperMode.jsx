@@ -45,6 +45,12 @@ function DeveloperMode() {
             <label className={styles.colorPickerLabel} for={'color1'}>
               Фон:<br></br> меняется цвет основного фона сайта.
             </label>
+            <FiCopy
+              onClick={() => {
+                navigator.clipboard.writeText(bgColor)
+              }}
+              className={styles.copyIcon}
+            />
           </div>
           <div className={styles.colorsRow}>
             <input
@@ -60,6 +66,12 @@ function DeveloperMode() {
             <label className={styles.colorPickerLabel} for={'color2'}>
               Текст:<br></br> меняется цвет всего текста на сайте, кроме кнопок
             </label>
+            <FiCopy
+              onClick={() => {
+                navigator.clipboard.writeText(textColor)
+              }}
+              className={styles.copyIcon}
+            />
           </div>
           <div className={styles.colorsRow}>
             <input
@@ -75,6 +87,12 @@ function DeveloperMode() {
             <label className={styles.colorPickerLabel} for={'color3'}>
               Акцент:<br></br> меняется цвет кнопок, рамок и иконок
             </label>
+            <FiCopy
+              onClick={() => {
+                navigator.clipboard.writeText(accentColor)
+              }}
+              className={styles.copyIcon}
+            />
           </div>
           <div className={styles.colorsRow}>
             <input
@@ -90,34 +108,13 @@ function DeveloperMode() {
             <label className={styles.colorPickerLabel} for={'color4'}>
               Фон секций: <br></br> просто фон секций
             </label>
+            <FiCopy
+              onClick={() => {
+                navigator.clipboard.writeText(panelColor)
+              }}
+              className={styles.copyIcon}
+            />
           </div>
-        </div>
-        <div className={styles.colorInputContainer}>
-          <input
-            type="text"
-            placeholder={'rgb(0, 0, 0)'}
-            name={'colorCodeRGB'}
-            className={styles.colorCodeInput}
-          ></input>
-          <FiCopy className={styles.copyIcon} />
-        </div>
-        <div className={styles.colorInputContainer}>
-          <input
-            type="text"
-            placeholder={'#000000'}
-            name={'colorCodeHEX'}
-            className={styles.colorCodeInput}
-          ></input>
-          <FiCopy className={styles.copyIcon} />
-        </div>
-        <div className={styles.colorInputContainer}>
-          <input
-            type="text"
-            placeholder={'hsl(0 0% 0%)'}
-            name={'colorCodeHSL'}
-            className={styles.colorCodeInput}
-          ></input>
-          <FiCopy className={styles.copyIcon} />
         </div>
       </section>
       <section className={styles.side + ' ' + styles.elementsContainer}>

@@ -52,4 +52,9 @@
 
   /* Тени */
   --shadow-glow: 0 0.125rem 0.3125rem var(--accent-clr);
+
+  /* Время */
+  --short-time: 0.1s;
+  --medium-time: 0.3s;
+  --long-time: 1s;
 }

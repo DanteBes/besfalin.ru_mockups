@@ -40,20 +40,6 @@
   justify-content: center;
 }
 
-.colorInputContainer {
-  position: relative;
-  font-family: monospace;
-}
-
-.copyIcon {
-  position: absolute;
-  top: var(--space-2);
-  right: var(--space-2);
-  height: var(--space-5);
-  width: var(--space-5);
-  color: var(--accent-clr);
-}
-
 .elementsContainer {
   background-color: var(--bg-clr);
   color: var(--txt-clr);
@@ -63,4 +49,40 @@
   display: flex;
   gap: var(--space-4);
   align-items: center;
+  position: relative;
+}
+
+.copyIcon {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  height: var(--space-5);
+  width: var(--space-5);
+  color: var(--accent-clr);
+
+  cursor: pointer;
+
+  transform: scale(100%);
+  transition:
+    color var(--medium-time),
+    transform var(--medium-time);
+}
+
+.copyIcon:hover {
+  color: var(--txt-clr);
+
+  transition:
+    color 0s,
+    transform var(--medium-time);
+}
+
+.copyIcon:active {
+  transform: scale(90%);
+
+  transition:
+    color 0s,
+    transform 0s;
+}
+
+.copyIcon:focus {
 }
