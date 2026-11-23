@@ -40,6 +40,25 @@ function ScrollToHash() {
 }
 
 function App() {
+  useEffect(() => {
+    if (window.sessionStorage.getItem('bgColor')) {
+      const bgColor = window.sessionStorage.getItem('bgColor')
+      document.documentElement.style.setProperty('--bg-clr', bgColor)
+    }
+    if (window.sessionStorage.getItem('textColor')) {
+      const textColor = window.sessionStorage.getItem('textColor')
+      document.documentElement.style.setProperty('--txt-clr', textColor)
+    }
+    if (window.sessionStorage.getItem('accentColor')) {
+      const accentColor = window.sessionStorage.getItem('accentColor')
+      document.documentElement.style.setProperty('--accent-clr', accentColor)
+    }
+    if (window.sessionStorage.getItem('panelColor')) {
+      const panelColor = window.sessionStorage.getItem('panelColor')
+      document.documentElement.style.setProperty('--panel-clr-main', panelColor)
+    }
+  }, [])
+
   return (
     <>
       <ScrollToHash />

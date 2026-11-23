@@ -10,18 +10,22 @@ function DeveloperMode() {
 
   useEffect(() => {
     document.documentElement.style.setProperty('--bg-clr', bgColor)
+    window.sessionStorage.setItem('bgColor', bgColor)
   }, [bgColor])
 
   useEffect(() => {
     document.documentElement.style.setProperty('--txt-clr', textColor)
+    window.sessionStorage.setItem('textColor', textColor)
   }, [textColor])
 
   useEffect(() => {
     document.documentElement.style.setProperty('--accent-clr', accentColor)
+    window.sessionStorage.setItem('accentColor', accentColor)
   }, [accentColor])
 
   useEffect(() => {
     document.documentElement.style.setProperty('--panel-clr-main', panelColor)
+    window.sessionStorage.setItem('panelColor', panelColor)
   }, [panelColor])
 
   return (
