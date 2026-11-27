@@ -7,7 +7,7 @@ function DeveloperMode() {
   const [accentColor, setAccentColor] = useState('#f0c15c')
   const [panelColor, setPanelColor] = useState('#0d121e')
 
-  const inputRef = useRef(null);
+  const inputRef = useRef(null)
 
   const selectAll = (e) => {
     const input = e?.currentTarget ?? inputRef.current
